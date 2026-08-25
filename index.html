@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GRC Practice Lab | GRC Workspace by GRC Guru</title>
-    <link rel="icon" href="logo">
-    <link rel="shortcut icon" href="logo">
-    <link rel="apple-touch-icon" href="logo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -210,44 +207,21 @@ body {
 .site-brand {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
 }
 
-.site-brand-logo-wrap {
-    width: clamp(72px, 8.2vw, 116px);
-    height: clamp(44px, 5vw, 68px);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-    background: transparent;
-}
-
-.site-brand-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.landing-logo-icon {
-    width: clamp(72px, 7vw, 96px) !important;
-    height: clamp(72px, 7vw, 96px) !important;
-    border-radius: 10px !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-}
-
-.landing-logo-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
 .site-brand-text {
-    display: none;
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-weight: 700;
+    color: #eef6ff;
+    letter-spacing: -0.01em;
+}
+
+.landing-logo-text {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
 }
 
 #edu-banner.edu-banner {
@@ -302,10 +276,8 @@ body {
         background: rgba(255, 255, 255, 0.9) !important;
     }
 
-    .site-brand-logo-wrap {
-        width: 84px;
-        height: 52px;
-        border-radius: 7px;
+    .site-brand-text {
+        font-size: 14px;
     }
 }
 </style>
@@ -316,11 +288,7 @@ body {
         <div class="landing-container">
             <nav class="landing-nav">
                 <div class="landing-logo">
-                    <div class="landing-logo-icon">
-                        <img src="brand-logo" alt="GRC Practice Lab Logo" onerror="this.onerror=null;this.src='logo';">
-                    </div>
-
-                    <span class="landing-logo-text">GRC Practice Lab</span>
+                    <span class="landing-logo-text">GRC Practice Lab by GRCGuru</span>
                 </div>
                 <div class="landing-nav-links">
                     <a href="#features">Features</a>
@@ -415,9 +383,7 @@ body {
         <div style="padding: 0 24px; height: 100%;">
             <nav class="site-header-nav">
                <a href="./" class="site-brand">
-                   <div class="site-brand-logo-wrap">
-                       <img src="brand-logo" alt="GRC Practice Lab Logo" class="site-brand-logo" onerror="this.onerror=null;this.src='logo';">
-                   </div>
+                   <span class="site-brand-text">GRC Practice Lab by GRCGuru</span>
                </a>
                <div class="site-header-links">
                    <a href="./" class="site-header-link">Home</a>
