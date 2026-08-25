@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GRC Practice Lab | GRC Workspace by GRC Guru</title>
-    <link rel="icon" type="image/svg+xml" href="logo.svg">
-    <link rel="shortcut icon" type="image/svg+xml" href="logo.svg">
-    <link rel="apple-touch-icon" href="logo.svg">
+    <link rel="icon" href="logo">
+    <link rel="shortcut icon" href="logo">
+    <link rel="apple-touch-icon" href="logo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -182,6 +182,133 @@
 .iso-family-card{background:#fff;border:1px solid rgba(148,163,184,.35);border-radius:18px;padding:18px;margin:14px 0;box-shadow:0 12px 30px rgba(15,23,42,.06)}
 .iso-family-card h4{margin:0 0 8px;font-size:16px;color:#0f172a;font-weight:900}.iso-family-card p{margin:0 0 12px;color:#475569;line-height:1.6}.iso-choice-grid{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.iso-choice-pill{border:1px solid rgba(148,163,184,.55);background:#f8fafc;color:#334155;border-radius:999px;padding:9px 13px;font-size:12px;font-weight:800;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;gap:6px}.iso-choice-pill:hover{transform:translateY(-1px);border-color:#2563eb;background:#eff6ff}.iso-choice-pill.active{background:linear-gradient(135deg,#2563eb,#0891b2);border-color:transparent;color:#fff;box-shadow:0 10px 22px rgba(37,99,235,.22)}.iso-family-answer{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:10px}.iso-family-answer textarea{width:100%;min-height:84px;border:1px solid rgba(148,163,184,.45);border-radius:14px;padding:12px 14px;font:inherit;resize:vertical;background:#fff;color:#0f172a}.iso-family-answer label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:900;color:#64748b}.iso-family-score{background:#0f172a;color:#fff;border-radius:18px;padding:16px;margin:14px 0}.iso-family-score .bar{height:10px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden;margin-top:10px}.iso-family-score .fill{height:100%;background:linear-gradient(135deg,#38bdf8,#22c55e);width:0%;transition:.25s}.iso-family-controls{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.iso-family-controls .btn{border-radius:12px!important}.iso-status-badge{font-size:11px;font-weight:900;border-radius:999px;padding:5px 8px;background:#ecfeff;color:#0e7490;border:1px solid #a5f3fc;display:inline-flex;gap:5px;align-items:center}.iso-reference-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0}.iso-ref-card{border:1px solid rgba(148,163,184,.32);border-radius:16px;padding:12px;background:#f8fafc}.iso-ref-card strong{font-size:13px;color:#0f172a}.iso-ref-card span{display:block;font-size:12px;line-height:1.5;color:#64748b;margin-top:4px}
 </style>
+
+<style id="grc-blended-theme-2026-08">
+:root {
+    --blend-bg-1: #ecf4ff;
+    --blend-bg-2: #f4fbff;
+    --blend-bg-3: #e9f7f2;
+    --blend-surface: rgba(255, 255, 255, 0.76);
+    --blend-surface-strong: rgba(255, 255, 255, 0.9);
+    --blend-border: rgba(17, 64, 126, 0.14);
+    --blend-shadow: 0 20px 44px -34px rgba(18, 40, 78, 0.48);
+}
+
+body {
+    background:
+        radial-gradient(70rem 46rem at 4% 0%, rgba(30, 99, 196, 0.16), transparent 62%),
+        radial-gradient(62rem 42rem at 94% 10%, rgba(20, 138, 108, 0.12), transparent 64%),
+        linear-gradient(145deg, var(--blend-bg-1) 0%, var(--blend-bg-2) 54%, var(--blend-bg-3) 100%) !important;
+    background-attachment: fixed;
+}
+
+.site-header {
+    background: linear-gradient(135deg, rgba(9, 36, 74, 0.82), rgba(21, 74, 126, 0.76), rgba(18, 108, 116, 0.7)) !important;
+    border-bottom: 1px solid rgba(207, 229, 255, 0.28) !important;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.site-brand-logo-wrap {
+    width: clamp(72px, 8.2vw, 116px);
+    height: clamp(44px, 5vw, 68px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    background: transparent;
+}
+
+.site-brand-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.landing-logo-icon {
+    width: clamp(72px, 7vw, 96px) !important;
+    height: clamp(72px, 7vw, 96px) !important;
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.landing-logo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.site-brand-text {
+    display: none;
+}
+
+#edu-banner.edu-banner {
+    background: linear-gradient(90deg, rgba(12, 50, 95, 0.95), rgba(22, 88, 148, 0.9), rgba(20, 110, 119, 0.9)) !important;
+}
+
+.sidebar {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.74) 0%, rgba(249, 253, 255, 0.67) 55%, rgba(244, 250, 252, 0.66) 100%),
+        radial-gradient(28rem 18rem at 50% -4%, rgba(111, 160, 238, 0.18), transparent 72%) !important;
+    border-right: 1px solid var(--blend-border) !important;
+    backdrop-filter: blur(16px) saturate(128%);
+    -webkit-backdrop-filter: blur(16px) saturate(128%);
+}
+
+.main-content {
+    background: transparent !important;
+}
+
+.main-content::before {
+    background: linear-gradient(180deg, rgba(17, 86, 160, 0.11), rgba(17, 86, 160, 0)) !important;
+}
+
+.content-header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(250, 254, 255, 0.8)) !important;
+    border: 1px solid var(--blend-border) !important;
+    box-shadow: var(--blend-shadow) !important;
+}
+
+.card,
+.modern-card,
+.project-card,
+.metric-card,
+.table-container,
+.chart-container,
+.onboarding-step,
+.workflow-chain,
+.trace-flow,
+.welcome-banner {
+    background: linear-gradient(180deg, var(--blend-surface-strong), var(--blend-surface)) !important;
+    border: 1px solid var(--blend-border) !important;
+    box-shadow: var(--blend-shadow) !important;
+}
+
+#site-footer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(244, 250, 255, 0.84)) !important;
+    border-top: 1px solid var(--blend-border) !important;
+}
+
+@media (max-width: 1024px) {
+    .content-header {
+        background: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    .site-brand-logo-wrap {
+        width: 84px;
+        height: 52px;
+        border-radius: 7px;
+    }
+}
+</style>
 </head>
 <body>
     <!-- ==================== LANDING PAGE ==================== -->
@@ -189,7 +316,9 @@
         <div class="landing-container">
             <nav class="landing-nav">
                 <div class="landing-logo">
-                    <div class="landing-logo-icon"></div>
+                    <div class="landing-logo-icon">
+                        <img src="brand-logo" alt="GRC Practice Lab Logo" onerror="this.onerror=null;this.src='logo';">
+                    </div>
 
                     <span class="landing-logo-text">GRC Practice Lab</span>
                 </div>
@@ -285,11 +414,10 @@
     <header class="site-header">
         <div style="padding: 0 24px; height: 100%;">
             <nav class="site-header-nav">
-               <a href="./" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-                   <div style="width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center; overflow:hidden;">
-  <img src="logo.svg" alt="GRC Practice Lab Logo" style="width:40px;height:40px;object-fit:contain;display:block;">
-</div>
-                   <span style="font-size: 15px; font-weight: 600; color: #eef6ff; letter-spacing: -0.01em;">GRC Practice Lab</span>
+               <a href="./" class="site-brand">
+                   <div class="site-brand-logo-wrap">
+                       <img src="brand-logo" alt="GRC Practice Lab Logo" class="site-brand-logo" onerror="this.onerror=null;this.src='logo';">
+                   </div>
                </a>
                <div class="site-header-links">
                    <a href="./" class="site-header-link">Home</a>
